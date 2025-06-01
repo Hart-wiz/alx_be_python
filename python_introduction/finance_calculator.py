@@ -1,14 +1,16 @@
 # Everything here is monthly
-userMonthlyIncome = float(input("Enter your monthly income: "))
-userTotalMonthlyExpenses = float(input("Enter your total monthly expenses: "))
+monthly_income = float(input("Enter your monthly income: "))
+monthly_expenses = float(input("Enter your total monthly expenses: "))
 
 # Calculate monthly savings
-monthlySavings = userMonthlyIncome - userTotalMonthlyExpenses
+monthly_savings = monthly_income - monthly_expenses
+
+
 
 # Calculate projected savings after one year with 5% interest
-annualSavings = monthlySavings * 12
-projectedSavings = annualSavings + (annualSavings * 0.05)
+annual_savings = monthly_savings * 12
+projected_savings = annual_savings + (annual_savings * 0.05)
 
 # Print results
-print("Your monthly savings are: ₦" + str(round(monthlySavings, 2)))
-print("Projected savings after one year, with interest, is:" + str(round(projectedSavings, 2)))
+print("Your monthly savings are:" + str(round(monthly_savings, 2)))
+print("Projected savings after one year, with interest, is:" + str(round(projected_savings, 2)))
